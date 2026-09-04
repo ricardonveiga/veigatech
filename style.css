@@ -37,10 +37,6 @@ body{
   line-height:1.5;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
-  cursor:none;
-}
-@media (max-width:900px), (hover:none){
-  body{ cursor:auto; }
 }
 img{ max-width:100%; display:block; }
 a{ color:inherit; text-decoration:none; }
@@ -74,6 +70,10 @@ svg{ display:block; }
   padding:0 var(--edge);
 }
 
+.section-sub{
+  font-size:16px; color:var(--muted); max-width:520px; margin-top:18px;
+}
+
 section{ position:relative; }
 
 /* ---------- texture layers ---------- */
@@ -92,27 +92,6 @@ section{ position:relative; }
   position:fixed; inset:0; z-index:997; pointer-events:none;
   box-shadow: inset 0 0 18vw rgba(0,0,0,.16);
 }
-
-/* ---------- custom cursor ---------- */
-.cursor,.cursor-dot{ position:fixed; top:0; left:0; pointer-events:none; z-index:9999; border-radius:50%; will-change:transform; }
-.cursor{
-  width:38px; height:38px; margin:-19px 0 0 -19px;
-  border:1.5px solid var(--ink); mix-blend-mode:difference;
-  transition:width .3s var(--ease), height .3s var(--ease), border-color .3s;
-}
-.cursor-dot{
-  width:6px; height:6px; margin:-3px 0 0 -3px; background:var(--gold);
-}
-.cursor.is-stamp{
-  width:84px; height:84px; margin:-42px 0 0 -42px;
-  border-color:var(--stamp); background:rgba(172,43,34,.08);
-}
-.cursor.is-stamp::after{
-  content:'CARIMBAR'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-  font-family:var(--font-body); font-weight:800; font-size:8px; letter-spacing:.1em; color:var(--stamp);
-}
-.cursor.is-link{ width:60px; height:60px; margin:-30px 0 0 -30px; border-color:var(--gold); }
-@media (max-width:900px), (hover:none){ .cursor,.cursor-dot{ display:none; } }
 
 /* ==========================================================================
    PRELOADER
@@ -158,7 +137,7 @@ body.is-loaded .preloader{ pointer-events:none; }
   mix-blend-mode:difference;
 }
 .nav__logo{ display:flex; align-items:center; gap:10px; }
-.nav__logo img{ width:38px; height:38px; border-radius:50%; filter:invert(1); }
+.nav__logo img{ width:56px; height:56px; border-radius:50%; filter:invert(1); }
 .nav__logo span{ font-family:var(--font-display); color:var(--paper); font-size:18px; letter-spacing:.03em; text-transform:uppercase; }
 .nav__logo span em{ color:var(--gold); font-style:normal; }
 
@@ -215,14 +194,6 @@ body.is-loaded .preloader{ pointer-events:none; }
   max-width:560px; font-size:clamp(16px,1.6vw,19px); color:var(--muted); margin-bottom:40px;
 }
 .hero__actions{ display:flex; gap:18px; flex-wrap:wrap; }
-
-.hero__scrollcue{
-  position:absolute; bottom:34px; left:var(--edge); display:flex; align-items:center; gap:12px;
-}
-.hero__scrollcue-line{ position:relative; width:1px; height:56px; background:var(--paper-line); overflow:hidden; }
-.hero__scrollcue-line i{ position:absolute; top:-100%; left:0; width:100%; height:100%; background:var(--gold); animation:scrollcue 2.2s ease-in-out infinite; }
-@keyframes scrollcue{ 0%{ top:-100%; } 50%{ top:0; } 100%{ top:100%; } }
-.hero__scrollcue-text{ font-size:11px; font-weight:700; letter-spacing:.28em; color:var(--muted); writing-mode:vertical-rl; }
 
 @media (max-width:640px){
   .hero{ padding-top:120px; }
@@ -417,7 +388,19 @@ body.is-loaded .preloader{ pointer-events:none; }
 .plan:hover .plan__stamp{ transform:rotate(-14deg) scale(1); opacity:.9; }
 
 .plan__eyebrow{ font-size:11px; font-weight:700; letter-spacing:.14em; color:var(--muted); text-transform:uppercase; }
-.plan__name{ font-family:var(--font-display); font-size:26px; text-transform:uppercase; margin:14px 0 20px; line-height:1.05; }
+.plan__name{ font-family:var(--font-display); font-size:26px; text-transform:uppercase; margin:14px 0 16px; line-height:1.05; }
+
+.plan__formula{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+.plan__formula-chip{
+  font-size:10.5px; font-weight:800; letter-spacing:.03em; text-transform:uppercase;
+  padding:6px 12px; border-radius:100px; border:1px solid var(--paper-line); color:var(--ink);
+}
+.plan--highlight .plan__formula-chip, .plan--dark .plan__formula-chip{ border-color:rgba(246,243,234,.3); color:var(--paper); }
+.plan__formula-plus{ font-family:var(--font-display); font-size:15px; color:var(--gold); }
+
+.plan__desc{ font-size:14px; line-height:1.55; color:var(--muted); margin-bottom:22px; }
+.plan--highlight .plan__desc, .plan--dark .plan__desc{ color:rgba(246,243,234,.7); }
+
 .plan__price{ font-family:var(--font-display); font-size:44px; margin-bottom:24px; }
 .plan__price span{ font-size:20px; vertical-align:top; margin-right:2px; }
 .plan__price em{ display:block; font-family:var(--font-body); font-style:normal; font-size:12px; color:var(--muted); font-weight:600; letter-spacing:.02em; margin-top:4px; }
@@ -493,7 +476,7 @@ body.is-loaded .preloader{ pointer-events:none; }
   padding-bottom:50px; border-bottom:1px solid var(--paper-line);
 }
 .footer__brand{ display:flex; align-items:center; gap:10px; }
-.footer__brand img{ width:36px; height:36px; border-radius:50%; }
+.footer__brand img{ width:52px; height:52px; border-radius:50%; }
 .footer__brand span{ font-family:var(--font-display); font-size:18px; text-transform:uppercase; }
 .footer__brand span em{ color:var(--gold); font-style:normal; }
 .footer__links{ display:flex; flex-direction:column; gap:10px; }

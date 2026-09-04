@@ -83,35 +83,6 @@
   .set(".preloader", { display:"none" });
 
   /* ---------------------------------------------------------------------
-     CUSTOM CURSOR
-     ------------------------------------------------------------------- */
-  if(!isTouch){
-    var ring = document.querySelector("[data-cursor-ring]");
-    var dot = document.querySelector("[data-cursor-dot]");
-    var mx = window.innerWidth/2, my = window.innerHeight/2;
-    var rx = mx, ry = my;
-
-    window.addEventListener("mousemove", function(e){
-      mx = e.clientX; my = e.clientY;
-      gsap.to(dot, { x:mx, y:my, duration:0.1, overwrite:true });
-    });
-
-    gsap.ticker.add(function(){
-      rx += (mx-rx)*0.16; ry += (my-ry)*0.16;
-      gsap.set(ring, { x:rx, y:ry });
-    });
-
-    document.querySelectorAll("a, button, [data-magnetic]").forEach(function(el){
-      el.addEventListener("mouseenter", function(){
-        ring.classList.add(el.hasAttribute("data-cursor") && el.getAttribute("data-cursor")==="stamp" ? "is-stamp" : "is-link");
-      });
-      el.addEventListener("mouseleave", function(){
-        ring.classList.remove("is-stamp","is-link");
-      });
-    });
-  }
-
-  /* ---------------------------------------------------------------------
      MAGNETIC BUTTONS
      ------------------------------------------------------------------- */
   if(!isTouch){
@@ -178,7 +149,6 @@
     .from(".hero__eyebrow", { opacity:0, y:14, duration:0.6, ease:"power2.out" }, "-=0.7")
     .from(".hero__sub", { opacity:0, y:14, duration:0.6, ease:"power2.out" }, "-=0.5")
     .from(".hero__actions", { opacity:0, y:14, duration:0.6, ease:"power2.out" }, "-=0.4")
-    .from(".hero__scrollcue", { opacity:0, duration:0.6 }, "-=0.3")
     .from(".hero__seal-deco", { opacity:0, scale:0.85, duration:1.2, ease:"power2.out" }, "-=1");
   }
 
