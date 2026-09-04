@@ -153,12 +153,19 @@ body.is-loaded .preloader{ pointer-events:none; }
 
 .mnav{
   position:fixed; inset:0; z-index:490; background:var(--ink); display:flex; flex-direction:column;
-  align-items:flex-start; justify-content:center; gap:22px; padding:0 var(--edge);
-  transform:translateX(100%); transition:transform .5s var(--ease);
+  align-items:flex-start; justify-content:center; gap:22px; padding:100px var(--edge) 30px;
+  transform:translateX(100%); transition:transform .5s var(--ease); overflow-y:auto;
 }
 .mnav.is-open{ transform:translateX(0); }
 .mnav a{ font-family:var(--font-display); color:var(--paper); font-size:32px; text-transform:uppercase; }
 .mnav__cta{ color:var(--gold) !important; }
+
+body.nav-open .nav{ mix-blend-mode:normal; }
+
+@media (max-height:480px){
+  .mnav{ gap:12px; padding:86px var(--edge) 24px; }
+  .mnav a{ font-size:22px; }
+}
 
 /* ==========================================================================
    HERO
@@ -231,7 +238,8 @@ body.is-loaded .preloader{ pointer-events:none; }
    ========================================================================== */
 .marquee{
   background:var(--ink); color:var(--paper); overflow:hidden; padding:22px 0;
-  transform:rotate(-1.1deg); margin:-14px 0; position:relative; z-index:5;
+  transform:rotate(-1.1deg); margin:-14px calc(50% - 50vw - 12px); position:relative; z-index:5;
+  width:calc(100vw + 24px);
 }
 .marquee__track{ display:flex; width:max-content; animation:marquee 26s linear infinite; }
 .marquee__track span{

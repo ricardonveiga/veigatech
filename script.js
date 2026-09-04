@@ -123,9 +123,13 @@
     burger.addEventListener("click", function(){
       var open = mnav.classList.toggle("is-open");
       burger.setAttribute("aria-expanded", open);
+      document.body.classList.toggle("nav-open", open);
     });
     document.querySelectorAll("[data-mnav-link]").forEach(function(a){
-      a.addEventListener("click", function(){ mnav.classList.remove("is-open"); });
+      a.addEventListener("click", function(){
+        mnav.classList.remove("is-open");
+        document.body.classList.remove("nav-open");
+      });
     });
   }
 
