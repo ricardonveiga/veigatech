@@ -27,7 +27,7 @@
 }
 
 *,*::before,*::after{ box-sizing:border-box; }
-html{ scroll-behavior:auto; }
+html{ scroll-behavior:auto; overflow-x:hidden; max-width:100%; }
 body{
   margin:0;
   background:var(--paper);
@@ -438,7 +438,7 @@ body.nav-open .nav{ mix-blend-mode:normal; }
    ========================================================================== */
 .sobre{
   padding:150px var(--edge); display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; align-items:center;
-  max-width:var(--container); margin:0 auto;
+  max-width:var(--container); margin:0 auto; overflow:hidden;
 }
 .sobre__seal{
   position:relative; width:100%; max-width:380px; aspect-ratio:1; margin:0 auto; color:var(--paper-line);
