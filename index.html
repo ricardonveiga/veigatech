@@ -1,530 +1,417 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pet Clínica Amigo Fiel — Veterinária e Pet Shop | Dra. Thais Negrão</title>
-<meta name="description" content="Pet Clínica Amigo Fiel, com a Dra. Thais Negrão: clínica veterinária e pet shop desde 2010. Consultas, vacinas, cirurgias, banho e tosa para cães e gatos, com atendimento próximo e humanizado." />
-<meta name="keywords" content="clínica veterinária, pet shop, veterinário para cães e gatos, banho e tosa, pet shop perto de mim, Dra. Thais Negrão, Pet Clínica Amigo Fiel" />
-<meta name="author" content="Pet Clínica Amigo Fiel" />
-<link rel="canonical" href="https://www.petclinicaamigofiel.com.br/" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>VeigaTech — Sua empresa, encontrada. Sem enrolação.</title>
+<meta name="description" content="Eu encontro os erros que fazem seu negócio perder cliente pro concorrente no Google — e conserto tudo. Google Meu Negócio, site e app. Preço fechado, entrega única, sem mensalidade.">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="canonical" href="https://veigatech.com.br/">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="pt_BR" />
-<meta property="og:site_name" content="Pet Clínica Amigo Fiel" />
-<meta property="og:title" content="Pet Clínica Amigo Fiel — Cuidado de verdade para quem faz parte da sua família" />
-<meta property="og:description" content="Clínica veterinária e pet shop desde 2010, com a Dra. Thais Negrão. Consultas, vacinas, cirurgias, banho e tosa para cães e gatos." />
-<meta property="og:url" content="https://www.petclinicaamigofiel.com.br/" />
-<meta property="og:image" content="https://www.petclinicaamigofiel.com.br/assets/img/hero-consulta.jpeg" />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VeigaTech">
+<meta property="og:title" content="VeigaTech — Sua empresa, encontrada. Sem enrolação.">
+<meta property="og:description" content="Eu conserto o motivo pelo qual seu cliente não te encontra — no Google, no site ou no celular dele.">
+<meta property="og:image" content="/assets/img/veigatech-logo-preto-e-branco.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Pet Clínica Amigo Fiel — Dra. Thais Negrão" />
-<meta name="twitter:description" content="Clínica veterinária e pet shop desde 2010. Cuidado de verdade para quem faz parte da sua família." />
+<link rel="icon" type="image/png" href="assets/img/veigatech-logo-preto-e-branco.png">
+<link rel="apple-touch-icon" href="assets/img/veigatech-logo-preto-e-branco.png">
 
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-<!-- Dados estruturados: LocalBusiness / VeterinaryCare -->
-<!-- TODO: assim que a geolocalização (latitude/longitude) exata for confirmada, adicionar "geo" abaixo. -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VeterinaryCare",
-  "name": "Pet Clínica Amigo Fiel",
-  "alternateName": "Pet Clínica Amigo Fiel - Dra. Thais Negrão",
-  "description": "Clínica veterinária e pet shop desde 2010. Consultas, vacinas, cirurgias, exames, quimioterapia, banho e tosa para cães e gatos.",
-  "telephone": "+55 11 94728-3242",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Miguel Mirizola, 232 - Jardim Estela Mari",
-    "addressLocality": "Cotia",
-    "addressRegion": "SP",
-    "postalCode": "06703-190",
-    "addressCountry": "BR"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Thais Negrão",
-    "jobTitle": "Médica Veterinária",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Universidade de Santo Amaro (UNISA)"
-    }
-  },
-  "sameAs": [
-    "https://www.instagram.com/petclinicaamigofiel"
-  ]
-}
-</script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= TOPBAR ================= -->
-<div class="topbar">
-  <div class="container">
-    <a href="tel:+5511947283242">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      (11) 94728-3242
-    </a>
-    <a href="https://www.instagram.com/petclinicaamigofiel" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-      @petclinicaamigofiel
-    </a>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<div class="cursor" data-cursor-ring aria-hidden="true"></div>
+<div class="cursor-dot" data-cursor-dot aria-hidden="true"></div>
+
+<div class="preloader" data-preloader aria-hidden="true">
+  <div class="preloader__inner">
+    <div class="preloader__seal" data-seal data-seal-text="VEIGATECH • APROVADO • " data-seal-size="180"></div>
+    <div class="preloader__stampmark" data-stampmark>APROVADO</div>
+    <div class="preloader__word">VEIGA<span>TECH</span></div>
+    <div class="preloader__bar"><div class="preloader__bar-fill" data-preloader-fill></div></div>
+    <div class="preloader__pct" data-preloader-pct>0%</div>
   </div>
+  <div class="preloader__curtain preloader__curtain--l"></div>
+  <div class="preloader__curtain preloader__curtain--r"></div>
 </div>
 
-<!-- ================= HEADER ================= -->
-<header id="header" class="header">
-  <div class="header-inner">
-    <a href="#inicio" class="brand">
-      <img src="assets/img/logo-mark.png" alt="Pet Clínica Amigo Fiel" class="brand-mark" width="44" height="44" />
-      <span class="brand-text">
-        <span class="brand-sub">Pet Clínica</span>
-        <span class="brand-name">Amigo <span>Fiel</span></span>
-      </span>
-    </a>
+<header class="nav" data-nav>
+  <a href="#hero" class="nav__logo" data-magnetic>
+    <img src="assets/img/veigatech-logo-preto-e-branco.png" alt="VeigaTech" width="44" height="44">
+    <span>VEIGA<em>TECH</em></span>
+  </a>
 
-    <nav class="nav-desktop">
-      <a href="#inicio">Início</a>
-      <a href="#clinica">A Clínica</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contato">Contato</a>
-      <a href="https://wa.me/5511947283242?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Pet%20Cl%C3%ADnica%20Amigo%20Fiel%20e%20gostaria%20de%20agendar%20um%20atendimento."
-        target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.85.505 3.664 1.463 5.24L2 22l4.938-1.293A9.96 9.96 0 0 0 12 22c5.522 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.032a8 8 0 0 1-4.093-1.13l-.293-.174-3.033.796.81-2.955-.19-.303A8.032 8.032 0 1 1 20.032 12 8.04 8.04 0 0 1 12 20.032z"/></svg>
-        WhatsApp
-      </a>
-    </nav>
-
-    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-mobile">
-      <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-    </button>
-  </div>
-
-  <nav id="nav-mobile" class="nav-mobile">
-    <a href="#inicio" class="nav-mobile-link">Início</a>
-    <a href="#clinica" class="nav-mobile-link">A Clínica</a>
-    <a href="#servicos" class="nav-mobile-link">Serviços</a>
-    <a href="#galeria" class="nav-mobile-link">Galeria</a>
-    <a href="#contato" class="nav-mobile-link">Contato</a>
-    <a href="https://wa.me/5511947283242?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Pet%20Cl%C3%ADnica%20Amigo%20Fiel%20e%20gostaria%20de%20agendar%20um%20atendimento."
-      target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.85.505 3.664 1.463 5.24L2 22l4.938-1.293A9.96 9.96 0 0 0 12 22c5.522 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.032a8 8 0 0 1-4.093-1.13l-.293-.174-3.033.796.81-2.955-.19-.303A8.032 8.032 0 1 1 20.032 12 8.04 8.04 0 0 1 12 20.032z"/></svg>
-      Falar pelo WhatsApp
-    </a>
+  <nav class="nav__links" data-nav-links>
+    <a href="#problema" data-hover-line>O problema</a>
+    <a href="#escada" data-hover-line>A escada</a>
+    <a href="#planos" data-hover-line>Planos</a>
+    <a href="#processo" data-hover-line>Como funciona</a>
+    <a href="#sobre" data-hover-line>Quem faz</a>
+    <a href="portfolio.html" data-hover-line>Portfólio</a>
   </nav>
+
+  <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20VeigaTech%20e%20quero%20saber%20mais." target="_blank" rel="noopener" class="nav__cta" data-magnetic data-cursor="stamp">
+    Falar agora
+  </a>
+
+  <button class="nav__burger" data-burger aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
+
+<div class="mnav" data-mnav>
+  <a href="#problema" data-mnav-link>O problema</a>
+  <a href="#escada" data-mnav-link>A escada</a>
+  <a href="#planos" data-mnav-link>Planos</a>
+  <a href="#processo" data-mnav-link>Como funciona</a>
+  <a href="#sobre" data-mnav-link>Quem faz</a>
+  <a href="portfolio.html" data-mnav-link>Portfólio</a>
+  <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20VeigaTech%20e%20quero%20saber%20mais." target="_blank" rel="noopener" class="mnav__cta" data-mnav-link>Falar agora</a>
+</div>
 
 <main>
 
-  <!-- ================= HERO ================= -->
-  <section id="inicio" class="hero">
-    <div class="container hero-inner">
-      <div class="hero-copy reveal">
-        <span class="eyebrow">Desde 2010</span>
-        <h1>Cuidado de verdade para quem faz parte da <em>sua família</em>.</h1>
-        <p>Na Pet Clínica Amigo Fiel, cães e gatos recebem atendimento veterinário, carinho e cuidado em um só lugar — com a Dra. Thais Negrão à frente de cada atendimento.</p>
-        <div class="hero-actions">
-          <a href="https://wa.me/5511947283242?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20para%20o%20meu%20pet." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
-            Agendar consulta
-          </a>
-          <a href="#clinica" class="btn btn-outline">Conhecer a clínica</a>
-        </div>
-        <div class="hero-trust-inline">
-          <span class="avatars"><span>🐾</span><span>🐶</span><span>🐱</span></span>
-          <div>
-            <strong>Mais de uma década de cuidado</strong>
-            <small>Cães e gatos atendidos com atenção próxima e humana</small>
-          </div>
-        </div>
-      </div>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__seal-deco" data-seal data-seal-text="✦ VEIGATECH ✦ SELO DE APROVAÇÃO " data-seal-size="520" data-parallax="0.15"></div>
 
-      <div class="hero-visual reveal reveal-delay-2">
-        <div class="hero-frame">
-          <img src="assets/img/hero-consulta.jpeg" alt="Dra. Thais Negrão, médica veterinária da Pet Clínica Amigo Fiel" width="800" height="1000" loading="eager" fetchpriority="high" />
-        </div>
-        <div class="hero-card-float">
-          <span class="icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-          </span>
-          <div>
-            <strong>Cuidado humanizado</strong>
-            <span>Atendimento próximo em cada consulta</span>
-          </div>
-        </div>
-        <div class="hero-badge-float">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
-          Cuidado veterinário
-        </div>
-        <div class="hero-logo-float">
-          <img src="assets/img/logo.png" alt="Selo Pet Clínica Amigo Fiel — desde 2010" width="134" height="134" loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="hero__grid">
+      <p class="hero__eyebrow" data-reveal-line>SELO DE PRESENÇA DIGITAL — DESDE O DIAGNÓSTICO ATÉ O APP</p>
 
-  <!-- ================= BARRA DE CONFIANÇA ================= -->
-  <div class="trustbar">
-    <div class="container">
-      <div class="trust-item reveal">
-        <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg></span>
-        <div><strong>Desde 2010</strong><span>Experiência e cuidado</span></div>
-      </div>
-      <div class="trust-item reveal reveal-delay-1">
-        <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.343 3.5 1 1.72-.332 3.897-1.762 4-3 .108-1.271-.925-2.755-.5-3.822"/><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.343-3.5 1-1.72-.332-3.897-1.762-4-3-.108-1.271.925-2.755.5-3.822"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a13.15 13.15 0 0 0-.42-3.309"/></svg></span>
-        <div><strong>Cães &amp; Gatos</strong><span>Atendimento especializado</span></div>
-      </div>
-      <div class="trust-item reveal reveal-delay-2">
-        <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
-        <div><strong>Clínica + Pet Shop</strong><span>Tudo em um só lugar</span></div>
-      </div>
-      <div class="trust-item reveal reveal-delay-3">
-        <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
-        <div><strong>Atendimento próximo</strong><span>Cuidamos como família</span></div>
-      </div>
-    </div>
-  </div>
+      <h1 class="hero__title">
+        <span class="split-line" data-split-line>SEU CLIENTE TE</span>
+        <span class="split-line" data-split-line>PROCUROU.</span>
+        <span class="split-line split-line--accent" data-split-line>ACHOU O CONCORRENTE.</span>
+      </h1>
 
-  <!-- ================= NOSSO CUIDADO ================= -->
-  <section id="clinica">
-    <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">Nosso cuidado</span>
-        <h2>Mais do que uma clínica. Um lugar para cuidar de quem você ama.</h2>
-        <p>Sabemos que seu pet não é apenas um animal de estimação. Ele faz parte da família. Por isso, cada atendimento é pensado para oferecer segurança, atenção e carinho em todos os momentos.</p>
-      </div>
+      <p class="hero__sub" data-reveal-line>
+        Categoria errada, fotos ruins, avaliação sem resposta. Isso custa cliente todos os dias.
+        Eu encontro o que está errado no seu Google e no seu site — e conserto. Preço fechado, sem mensalidade.
+      </p>
 
-      <div class="care-grid">
-        <div class="care-card reveal">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
-          <h3>Clínica Veterinária</h3>
-          <p>Consultas e acompanhamento para a saúde do seu pet.</p>
-        </div>
-        <div class="care-card reveal reveal-delay-1">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
-          <h3>Pet Shop</h3>
-          <p>Produtos selecionados para o bem-estar de cães e gatos.</p>
-        </div>
-        <div class="care-card reveal reveal-delay-2">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7"/><path d="M15 5 5 15"/><path d="M14 17v.01"/><path d="M10 16v.01"/><path d="M13 13v.01"/><path d="M16 10v.01"/><path d="M11 20v.01"/><path d="M17 14v.01"/><path d="M20 11v.01"/></svg></span>
-          <h3>Banho &amp; Tosa</h3>
-          <p>Cuidados de higiene, estética e conforto.</p>
-        </div>
-        <div class="care-card reveal reveal-delay-3">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
-          <h3>Cuidados Preventivos</h3>
-          <p>Acompanhamento para ajudar seu pet a viver melhor.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= DRA. THAIS NEGRÃO ================= -->
-  <section class="section-soft">
-    <div class="container about-grid">
-      <div class="about-photo reveal">
-        <div class="about-photo-frame">
-          <img src="assets/img/dra-thais.jpeg" alt="Dra. Thais Negrão, médica veterinária e fundadora da Pet Clínica Amigo Fiel" width="800" height="1000" loading="lazy" />
-        </div>
-        <div class="about-crmv">Dra. Thais Negrão · <span>Médica Veterinária</span></div>
-      </div>
-
-      <div class="about-copy reveal reveal-delay-1">
-        <span class="eyebrow">Quem cuida</span>
-        <h2 style="font-size:clamp(26px,3vw,36px); font-weight:800; margin-top:14px; line-height:1.2;">Quem cuida também faz parte da família.</h2>
-        <h3 class="name">Dra. Thais Negrão</h3>
-        <p>À frente da Pet Clínica Amigo Fiel, Dra. Thais Negrão dedica seu trabalho ao cuidado e bem-estar dos animais, construindo ao longo dos anos uma relação de confiança com seus tutores.</p>
-        <p>Médica veterinária formada pela Universidade de Santo Amaro (UNISA) em 2006, Dra. Thais transformou essa dedicação em uma clínica que une atendimento veterinário e pet shop em um único endereço de bairro — pensado para que cada tutor se sinta seguro ao procurar ajuda para o seu pet, desde 2010.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SERVIÇOS ================= -->
-  <section id="servicos">
-    <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">Serviços</span>
-        <h2>Cuidado completo, do consultório ao pet shop.</h2>
-        <p>Consultas, prevenção, estética e produtos — tudo pensado para a saúde e o bem-estar do seu cão ou gato.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card featured reveal">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
-          <h3>Consultas Veterinárias</h3>
-          <p>Avaliação clínica completa para cães e gatos, em todas as fases da vida.</p>
-          <a href="https://wa.me/5511947283242?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer" class="service-link">Agendar consulta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-        </div>
-        <div class="service-card reveal reveal-delay-1">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg></span>
-          <h3>Vacinação</h3>
-          <p>Protocolos de vacinas para proteger seu pet ao longo de toda a vida.</p>
-        </div>
-        <div class="service-card reveal reveal-delay-2">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
-          <h3>Avaliação Preventiva</h3>
-          <p>Acompanhamento regular para identificar cuidados antes que se tornem problemas.</p>
-        </div>
-        <div class="service-card reveal reveal-delay-3">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 4 2.5 2.5"/><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7"/><path d="M15 5 5 15"/><path d="M14 17v.01"/><path d="M10 16v.01"/><path d="M13 13v.01"/><path d="M16 10v.01"/><path d="M11 20v.01"/><path d="M17 14v.01"/><path d="M20 11v.01"/></svg></span>
-          <h3>Banho &amp; Tosa</h3>
-          <p>Higiene e estética com conforto — leva e traz disponível.</p>
-        </div>
-        <div class="service-card reveal reveal-delay-4">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
-          <h3>Pet Shop</h3>
-          <p>Rações, acessórios e produtos selecionados para cães e gatos.</p>
-        </div>
-        <div class="service-card reveal">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9c3.9 3.9 3.9 10.2 0 14.1"/></svg></span>
-          <h3>Cirurgias &amp; Exames</h3>
-          <p>Estrutura para procedimentos cirúrgicos e exames diagnósticos.</p>
-        </div>
-        <div class="service-card reveal reveal-delay-1">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-11 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>
-          <h3>Terapia Integrativa</h3>
-          <p>Abordagens complementares para o bem-estar e a qualidade de vida do seu pet.</p>
-        </div>
-        <div class="service-card reveal reveal-delay-2">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg></span>
-          <h3>Fisioterapia</h3>
-          <p>Sessões de reabilitação para recuperação de mobilidade e força.</p>
-        </div>
-        <div class="service-card reveal reveal-delay-3">
-          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8"/><path d="M8 12h8"/></svg></span>
-          <h3>Campanha de Castração</h3>
-          <p>Realizamos campanha de castração duas vezes ao ano, com condições especiais para tutores.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CTA WHATSAPP ================= -->
-  <section>
-    <div class="container">
-      <div class="cta-whats reveal">
-        <span class="eyebrow">Fale com a gente</span>
-        <h2>Precisa cuidar do seu pet?</h2>
-        <p>Fale com a nossa equipe pelo WhatsApp e agende o atendimento do seu cão ou gato em poucos minutos.</p>
-        <a href="https://wa.me/5511947283242?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20para%20cuidar%20do%20meu%20pet." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.85.505 3.664 1.463 5.24L2 22l4.938-1.293A9.96 9.96 0 0 0 12 22c5.522 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.032a8 8 0 0 1-4.093-1.13l-.293-.174-3.033.796.81-2.955-.19-.303A8.032 8.032 0 1 1 20.032 12 8.04 8.04 0 0 1 12 20.032z"/></svg>
-          Falar pelo WhatsApp
+      <div class="hero__actions" data-reveal-line>
+        <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20VeigaTech%20e%20quero%20meu%20diagn%C3%B3stico%20gr%C3%A1tis." target="_blank" rel="noopener" class="btn btn--primary" data-magnetic data-cursor="stamp">
+          <span>Quero meu diagnóstico grátis</span>
+        </a>
+        <a href="#planos" class="btn btn--ghost" data-magnetic>
+          <span>Ver os planos</span>
         </a>
       </div>
     </div>
+
+    <div class="hero__scrollcue" data-magnetic>
+      <span class="hero__scrollcue-line"><i data-scrollcue-fill></i></span>
+      <span class="hero__scrollcue-text">ROLE</span>
+    </div>
   </section>
 
-  <!-- ================= GALERIA ================= -->
-  <section id="galeria" class="section-soft">
-    <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">Galeria</span>
-        <h2>Um lugar feito para cuidar.</h2>
-        <p>Fotos reais da clínica, do atendimento e dos pets que passam por aqui — em breve, atualizadas com o acervo completo.</p>
+  <!-- MARQUEE -->
+  <div class="marquee" data-parallax-marquee>
+    <div class="marquee__track" data-marquee-track>
+      <span>SEM MENSALIDADE&nbsp;&nbsp;✦&nbsp;&nbsp;PREÇO FECHADO&nbsp;&nbsp;✦&nbsp;&nbsp;ENTREGA ÚNICA&nbsp;&nbsp;✦&nbsp;&nbsp;SEM LETRA MIÚDA&nbsp;&nbsp;✦&nbsp;&nbsp;SEM ENROLAÇÃO&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      <span>SEM MENSALIDADE&nbsp;&nbsp;✦&nbsp;&nbsp;PREÇO FECHADO&nbsp;&nbsp;✦&nbsp;&nbsp;ENTREGA ÚNICA&nbsp;&nbsp;✦&nbsp;&nbsp;SEM LETRA MIÚDA&nbsp;&nbsp;✦&nbsp;&nbsp;SEM ENROLAÇÃO&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- PROBLEMA -->
+  <section id="problema" class="problema">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal>O PROBLEMA</p>
+      <h2 class="section-title" data-reveal-words>Enquanto você lê isso,<br>alguém está escolhendo<br>o seu concorrente.</h2>
+    </div>
+
+    <div class="stats" data-reveal-stagger>
+      <div class="stat">
+        <span class="stat__num" data-counter data-counter-to="9" data-counter-suffix="/10">0</span>
+        <p class="stat__label">pessoas pesquisam no Google antes de decidir onde comprar ou marcar horário</p>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-counter data-counter-to="68" data-counter-suffix="%">0</span>
+        <p class="stat__label">não voltam pra um perfil com fotos ruins ou informação errada</p>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-counter data-counter-to="3" data-counter-suffix="s">0</span>
+        <p class="stat__label">é o tempo que alguém leva pra decidir se confia no seu perfil</p>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-counter data-counter-to="0" data-counter-prefix="R$">0</span>
+        <p class="stat__label">é quanto custa descobrir o que está errado — o diagnóstico é grátis</p>
+      </div>
+    </div>
+
+    <div class="compare" data-reveal>
+      <div class="compare__card compare__card--before">
+        <span class="compare__tag">ANTES</span>
+        <div class="mockcard">
+          <div class="mockcard__row">
+            <div class="mockcard__avatar"></div>
+            <div class="mockcard__lines">
+              <div class="mockcard__line mockcard__line--title"></div>
+              <div class="mockcard__stars">★★★☆☆ <em>(2)</em></div>
+            </div>
+          </div>
+          <div class="mockcard__line mockcard__line--w70"></div>
+          <div class="mockcard__line mockcard__line--w40"></div>
+          <div class="mockcard__photos">
+            <div class="mockcard__photo mockcard__photo--empty"></div>
+            <div class="mockcard__photo mockcard__photo--empty"></div>
+          </div>
+        </div>
+        <p class="compare__caption">Categoria genérica, sem resposta às avaliações, fotos escuras. O cliente rola e some.</p>
       </div>
 
-      <!-- Fotos temporárias (banco de imagens, uso livre) para fins de apresentação/venda do site — substituir pelo acervo real da clínica. -->
-      <div class="gallery-grid">
-        <div class="gallery-item reveal">
-          <img src="assets/img/galeria-clinica.jpeg" alt="Cão realizando eletrocardiograma na Pet Clínica Amigo Fiel" loading="lazy" />
-          <span class="gallery-caption">Exames na clínica</span>
+      <div class="compare__card compare__card--after">
+        <span class="compare__tag compare__tag--after">DEPOIS</span>
+        <div class="mockcard mockcard--good">
+          <div class="mockcard__row">
+            <div class="mockcard__avatar mockcard__avatar--good"></div>
+            <div class="mockcard__lines">
+              <div class="mockcard__line mockcard__line--title mockcard__line--good"></div>
+              <div class="mockcard__stars mockcard__stars--good">★★★★★ <em>(147)</em></div>
+            </div>
+          </div>
+          <div class="mockcard__line mockcard__line--w70 mockcard__line--good"></div>
+          <div class="mockcard__line mockcard__line--w40 mockcard__line--good"></div>
+          <div class="mockcard__photos">
+            <div class="mockcard__photo mockcard__photo--good"></div>
+            <div class="mockcard__photo mockcard__photo--good"></div>
+          </div>
         </div>
-        <div class="gallery-item gallery-item-logo reveal reveal-delay-1">
-          <img src="assets/img/galeria-atendimento.png" alt="Selo Pet Clínica Amigo Fiel — Dra. Thais Negrão, desde 2010" loading="lazy" />
-          <span class="gallery-caption">Nosso selo</span>
-        </div>
-        <div class="gallery-item reveal reveal-delay-2">
-          <img src="assets/img/galeria-petshop.jpeg" alt="Cão fantasiado em evento especial da Pet Clínica Amigo Fiel" loading="lazy" />
-          <span class="gallery-caption">Momentos especiais</span>
-        </div>
-        <div class="gallery-item reveal reveal-delay-3">
-          <img src="assets/img/galeria-banho-tosa.jpeg" alt="Dra. Thais com um gatinho no colo" loading="lazy" />
-          <span class="gallery-caption">Carinho de perto</span>
-        </div>
-        <div class="gallery-item reveal reveal-delay-4">
-          <img src="assets/img/galeria-pets.jpeg" alt="Cão atendido na Pet Clínica Amigo Fiel" loading="lazy" />
-          <span class="gallery-caption">Nossos pacientes</span>
-        </div>
+        <div class="compare__stamp" data-seal data-seal-text="✓ APROVADO ✓ VEIGATECH " data-seal-size="120" data-stamp-hover></div>
+        <p class="compare__caption">Categoria certa, avaliações respondidas, fotos boas. O cliente clica.</p>
       </div>
     </div>
   </section>
 
-  <!-- ================= AVALIAÇÕES ================= -->
-  <section id="avaliacoes">
-    <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">Avaliações</span>
-        <h2>Quem conhece, confia.</h2>
-        <p>O carinho de quem já confia na Pet Clínica Amigo Fiel para cuidar do seu cão ou gato.</p>
+  <!-- ESCADA -->
+  <section id="escada" class="escada" data-escada>
+    <div class="escada__pin" data-escada-pin>
+      <div class="escada__head">
+        <p class="eyebrow">A ESCADA DA PRESENÇA DIGITAL</p>
+        <h2 class="section-title">Não são três produtos.<br>São três degraus.</h2>
       </div>
 
-      <div class="reviews-grid">
-        <div class="review-card reveal">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
+      <div class="escada__track" data-escada-track>
+
+        <article class="degrau">
+          <span class="degrau__num">01</span>
+          <div class="degrau__icon" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><path d="M50 10c-16 0-29 13-29 29 0 22 29 51 29 51s29-29 29-51c0-16-13-29-29-29z" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="39" r="11" fill="none" stroke="currentColor" stroke-width="3"/></svg>
           </div>
-          <p>Levo minha cachorra lá desde filhote. A Dra. Thais é super atenciosa, explica tudo com calma e nunca me senti apressada na consulta. Recomendo de olhos fechados.</p>
-          <div class="review-author">
-            <span class="avatar">M</span>
-            <div><strong>Mariana C.</strong><span>Tutora de pet</span></div>
+          <h3>GOOGLE</h3>
+          <p>Seu negócio aparece <em>certo</em> pra quem já está procurando por você. Categoria, fotos, horário, avaliações — tudo no lugar.</p>
+          <span class="degrau__tag">VeigaTech Selo Simples &amp; Ouro</span>
+        </article>
+
+        <article class="degrau">
+          <span class="degrau__num">02</span>
+          <div class="degrau__icon" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><rect x="14" y="20" width="72" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 34h72" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="27" r="2.4" fill="currentColor"/><circle cx="32" cy="27" r="2.4" fill="currentColor"/></svg>
           </div>
-        </div>
-        <div class="review-card reveal reveal-delay-1">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
+          <h3>SITE</h3>
+          <p>Seu negócio tem pra onde mandar esse clique. Uma vitrine rápida, no seu nome, que fecha venda em vez de afastar.</p>
+          <span class="degrau__tag">VeigaTech Dual</span>
+        </article>
+
+        <article class="degrau">
+          <span class="degrau__num">03</span>
+          <div class="degrau__icon" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><rect x="30" y="10" width="40" height="80" rx="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M30 22h40M30 70h40" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="76" r="3" fill="currentColor"/></svg>
           </div>
-          <p>Uso o serviço de banho e tosa há uns 2 anos e nunca tive problema. O leva e traz facilita muito minha rotina, e meu cachorro sempre volta cheiroso e feliz.</p>
-          <div class="review-author">
-            <span class="avatar">R</span>
-            <div><strong>Rodrigo A.</strong><span>Tutor de pet</span></div>
-          </div>
-        </div>
-        <div class="review-card reveal reveal-delay-2">
-          <div class="review-stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15 9l7 1-5 5 1.5 7L12 18.5 5.5 22 7 15 2 10l7-1Z"/></svg>
-          </div>
-          <p>Minha gata passou mal de madrugada e fui atendida na hora, sem enrolação. Equipe atenciosa, explicou cada etapa do tratamento e me deixou tranquila num momento de desespero. Um cuidado que faz toda diferença.</p>
-          <div class="review-author">
-            <span class="avatar">C</span>
-            <div><strong>Camila S.</strong><span>Tutora de pet</span></div>
-          </div>
-        </div>
+          <h3>APP</h3>
+          <p>Seu negócio já é grande o bastante pra ter canal próprio: agendamento, fidelidade, pedido — direto no bolso do cliente.</p>
+          <span class="degrau__tag">VeigaTech Sob Medida</span>
+        </article>
+
+      </div>
+
+      <div class="escada__progress" aria-hidden="true">
+        <span data-escada-current>01</span>
+        <div class="escada__progress-bar"><i data-escada-progress></i></div>
+        <span>03</span>
       </div>
     </div>
   </section>
 
-  <!-- ================= LOCALIZAÇÃO ================= -->
-  <section id="contato" class="section-soft">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Localização</span>
-        <h2>Estamos perto de você.</h2>
+  <!-- PLANOS -->
+  <section id="planos" class="planos">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal>OS PLANOS</p>
+      <h2 class="section-title" data-reveal-words>Preço fechado.<br>Você sabe exatamente<br>o que leva.</h2>
+    </div>
+
+    <div class="plans" data-reveal-stagger>
+
+      <div class="plan" data-tilt>
+        <div class="plan__stamp" data-seal data-seal-text="✓ APROVADO ✓ APROVADO " data-seal-size="130" data-stamp-hover></div>
+        <span class="plan__eyebrow">DEGRAU 01 · GOOGLE</span>
+        <h3 class="plan__name">Selo<br>Simples</h3>
+        <p class="plan__price"><span>R$</span>197<em>/ entrega única</em></p>
+        <ul class="plan__list">
+          <li>Otimização do Google Meu Negócio</li>
+          <li>Categoria e descrição corrigidas</li>
+          <li>Diagnóstico completo incluso</li>
+        </ul>
+        <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Quero%20contratar%20o%20VeigaTech%20Selo%20Simples%20%28R%24197%29." target="_blank" rel="noopener" class="btn btn--outline" data-magnetic data-cursor="stamp"><span>Quero esse</span></a>
       </div>
 
-      <div class="location-grid">
-        <div class="location-info reveal">
-          <div class="location-row">
-            <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-            <div>
-              <strong>Endereço</strong>
-              <p>Av. Miguel Mirizola, 232 — Jardim Estela Mari, Cotia - SP, 06703-190</p>
-            </div>
-          </div>
-          <div class="location-row">
-            <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-            <div>
-              <strong>WhatsApp</strong>
-              <p>(11) 94728-3242</p>
-            </div>
-          </div>
-          <div class="location-row">
-            <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-            <div>
-              <strong>Horário de atendimento</strong>
-              <p>Segunda a sexta, das 9h às 18h</p>
-            </div>
-          </div>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Miguel+Mirizola%2C+232+-+Jardim+Estela+Mari%2C+Cotia+-+SP%2C+06703-190" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Como chegar</a>
-        </div>
+      <div class="plan plan--highlight" data-tilt>
+        <span class="plan__badge">MAIS PEDIDO</span>
+        <div class="plan__stamp" data-seal data-seal-text="✓ APROVADO ✓ APROVADO " data-seal-size="130" data-stamp-hover></div>
+        <span class="plan__eyebrow">DEGRAU 01 · GOOGLE</span>
+        <h3 class="plan__name">Selo<br>Ouro</h3>
+        <p class="plan__price"><span>R$</span>297<em>/ entrega única</em></p>
+        <ul class="plan__list">
+          <li>Tudo do Selo Simples</li>
+          <li>Fotos, avaliações e respostas</li>
+          <li>SEO local — apareça na busca certa</li>
+        </ul>
+        <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Quero%20contratar%20o%20VeigaTech%20Selo%20Ouro%20%28R%24297%29." target="_blank" rel="noopener" class="btn btn--primary" data-magnetic data-cursor="stamp"><span>Quero esse</span></a>
+      </div>
 
-        <div class="location-map reveal reveal-delay-1">
-          <iframe src="https://www.google.com/maps?q=Av.+Miguel+Mirizola%2C+232+-+Jardim+Estela+Mari%2C+Cotia+-+SP%2C+06703-190&output=embed" title="Mapa — Pet Clínica Amigo Fiel" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        </div>
+      <div class="plan" data-tilt>
+        <div class="plan__stamp" data-seal data-seal-text="✓ APROVADO ✓ APROVADO " data-seal-size="130" data-stamp-hover></div>
+        <span class="plan__eyebrow">DEGRAU 02 · GOOGLE + SITE</span>
+        <h3 class="plan__name">Dual</h3>
+        <p class="plan__price"><span>R$</span>497<em>/ entrega única</em></p>
+        <ul class="plan__list">
+          <li>Site profissional no seu nome</li>
+          <li>Google Meu Negócio otimizado</li>
+          <li>Integração com WhatsApp</li>
+        </ul>
+        <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Quero%20contratar%20o%20VeigaTech%20Dual%20%28R%24497%29." target="_blank" rel="noopener" class="btn btn--outline" data-magnetic data-cursor="stamp"><span>Quero esse</span></a>
+      </div>
+
+      <div class="plan plan--dark" data-tilt>
+        <span class="plan__badge plan__badge--dark">PROJETO SOB MEDIDA</span>
+        <span class="plan__eyebrow">DEGRAU 03 · APP</span>
+        <h3 class="plan__name">Sob<br>Medida</h3>
+        <p class="plan__price plan__price--custom">Sob orçamento<em>/ escopo do projeto</em></p>
+        <ul class="plan__list">
+          <li>App iOS / Android sob medida</li>
+          <li>Agendamento, fidelidade ou pedido</li>
+          <li>Para negócios já estruturados</li>
+        </ul>
+        <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Quero%20falar%20sobre%20um%20projeto%20sob%20medida%20com%20a%20VeigaTech." target="_blank" rel="noopener" class="btn btn--light" data-magnetic data-cursor="stamp"><span>Falar sobre o projeto</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section id="processo" class="processo">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal>COMO FUNCIONA</p>
+      <h2 class="section-title" data-reveal-words>Quatro passos.<br>Nenhum deles é<br>"vamos alinhar".</h2>
+    </div>
+
+    <div class="timeline" data-timeline>
+      <svg class="timeline__line" viewBox="0 0 4 1000" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M2 0 L2 1000" data-timeline-path/>
+      </svg>
+
+      <div class="timeline__step" data-reveal>
+        <span class="timeline__num">01</span>
+        <h3>Diagnóstico grátis</h3>
+        <p>Eu analiso seu perfil e te mostro os erros — de graça, antes de você pagar qualquer coisa.</p>
+      </div>
+      <div class="timeline__step" data-reveal>
+        <span class="timeline__num">02</span>
+        <h3>Preço fechado na hora</h3>
+        <p>Sem proposta genérica em PDF, sem depender de "vamos alinhar com o time". Você sabe o valor na primeira conversa.</p>
+      </div>
+      <div class="timeline__step" data-reveal>
+        <span class="timeline__num">03</span>
+        <h3>Execução rápida</h3>
+        <p>Poucos dias, não meses. Enquanto agência monta cronograma, eu já entreguei.</p>
+      </div>
+      <div class="timeline__step" data-reveal>
+        <span class="timeline__num">04</span>
+        <h3>Selo de aprovado</h3>
+        <p>Você recebe pronto, testado, com o carimbo VeigaTech — e eu só saio de cena quando está no ar.</p>
       </div>
     </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="sobre__seal" data-seal data-seal-text="✦ VEIGATECH ✦ NÃO É AGÊNCIA, SOU EU " data-seal-size="380" data-parallax="0.1">
+      <img src="assets/img/veigatech-logo-preto-e-branco.png" alt="" class="sobre__seal-img">
+    </div>
+    <div class="sobre__content">
+      <p class="eyebrow" data-reveal>QUEM FAZ</p>
+      <h2 class="section-title" data-reveal-words>Não é agência.<br>Sou eu.</h2>
+      <p class="sobre__text" data-reveal>
+        Gravata-borboleta no logo não é enfeite — é postura. Aqui não tem "nossa equipe" nem
+        "nossos especialistas" de plural institucional escondendo ninguém. Tem uma pessoa,
+        com nome e sobrenome, que aparece, aponta o que está errado, resolve — e entrega.
+      </p>
+      <blockquote class="sobre__quote" data-reveal>
+        "A gente não vende marketing digital.<br>A gente conserta o motivo pelo qual<br>seu cliente não te encontra."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contato" class="cta-final">
+    <div class="cta-final__seal" data-seal data-seal-text="✦ VAMOS COMEÇAR ✦ VEIGATECH " data-seal-size="640" data-parallax="0.08"></div>
+    <p class="eyebrow eyebrow--light" data-reveal>PRÓXIMO PASSO</p>
+    <h2 class="cta-final__title" data-reveal-words>VAMOS<br>COMEÇAR?</h2>
+    <p class="cta-final__sub" data-reveal>
+      Diagnóstico gratuito, sem compromisso. Eu te mostro exatamente<br class="br-desktop">
+      o que está te custando cliente agora.
+    </p>
+    <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20meu%20diagn%C3%B3stico%20gr%C3%A1tis." target="_blank" rel="noopener" class="btn btn--primary btn--xl" data-magnetic data-cursor="stamp">
+      <span>Chamar no WhatsApp</span>
+    </a>
   </section>
 
 </main>
 
-<!-- ================= FOOTER ================= -->
 <footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-col">
-        <div class="footer-brand">
-          <img src="assets/img/logo-mark.png" alt="Pet Clínica Amigo Fiel" class="brand-mark" width="44" height="44" />
-          <div class="footer-brand-text">
-            <strong>Pet Clínica Amigo Fiel</strong>
-            <span>Dra. Thais Negrão</span>
-          </div>
-        </div>
-        <p>Clínica veterinária e pet shop desde 2010, cuidando de cães e gatos com atenção próxima e humanizada.</p>
-        <p class="footer-tagline">A amizade que cuida.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-heading">Navegação</h4>
-        <ul class="footer-links">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#clinica">Clínica</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#servicos">Pet Shop</a></li>
-          <li><a href="#servicos">Banho &amp; Tosa</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-heading">Contato</h4>
-        <ul class="footer-contact">
-          <li>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.85.505 3.664 1.463 5.24L2 22l4.938-1.293A9.96 9.96 0 0 0 12 22c5.522 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.032a8 8 0 0 1-4.093-1.13l-.293-.174-3.033.796.81-2.955-.19-.303A8.032 8.032 0 1 1 20.032 12 8.04 8.04 0 0 1 12 20.032z"/></svg>
-            (11) 94728-3242
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            Av. Miguel Mirizola, 232 — Cotia - SP
-          </li>
-        </ul>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/petclinicaamigofiel" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-          </a>
-          <a href="https://wa.me/5511947283242" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.85.505 3.664 1.463 5.24L2 22l4.938-1.293A9.96 9.96 0 0 0 12 22c5.522 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.032a8 8 0 0 1-4.093-1.13l-.293-.174-3.033.796.81-2.955-.19-.303A8.032 8.032 0 1 1 20.032 12 8.04 8.04 0 0 1 12 20.032z"/></svg>
-          </a>
-        </div>
-      </div>
+  <div class="footer__seal" data-seal data-seal-text="VEIGATECH • EVERYTHING FOR YOU • " data-seal-size="150"></div>
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <img src="assets/img/veigatech-logo-preto-e-branco.png" alt="VeigaTech" width="40" height="40">
+      <span>VEIGA<em>TECH</em></span>
     </div>
-
-    <div class="footer-bottom">
-      <span>© 2026 Pet Clínica Amigo Fiel. Todos os direitos reservados.</span>
+    <nav class="footer__links">
+      <a href="#problema">O problema</a>
+      <a href="#escada">A escada</a>
+      <a href="#planos">Planos</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#sobre">Quem faz</a>
+      <a href="portfolio.html">Portfólio</a>
+    </nav>
+    <div class="footer__contact">
+      <a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20VeigaTech." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:contato@veigatech.com.br">contato@veigatech.com.br</a>
+      <a href="https://instagram.com/veigatech" target="_blank" rel="noopener">Instagram</a>
     </div>
+  </div>
+  <div class="footer__bottom">
+    <span>VeigaTech. Everything, for you. <em>BR</em></span>
+    <span data-year></span>
   </div>
 </footer>
 
-<!-- ================= WHATSAPP FLUTUANTE ================= -->
-<a href="https://wa.me/5511947283242?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Pet%20Cl%C3%ADnica%20Amigo%20Fiel." target="_blank" rel="noopener noreferrer" id="whats-float" class="whats-float" aria-label="Falar no WhatsApp">
-  <span class="ping"></span>
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.85.505 3.664 1.463 5.24L2 22l4.938-1.293A9.96 9.96 0 0 0 12 22c5.522 0 10-4.477 10-10S17.523 2 12.001 2zm0 18.032a8 8 0 0 1-4.093-1.13l-.293-.174-3.033.796.81-2.955-.19-.303A8.032 8.032 0 1 1 20.032 12 8.04 8.04 0 0 1 12 20.032z"/></svg>
+<a href="https://wa.me/5511968105997?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20VeigaTech." target="_blank" rel="noopener" class="whatsapp-float" data-magnetic aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.7-1.6-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.1 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
 </a>
 
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
