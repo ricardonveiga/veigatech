@@ -362,7 +362,7 @@ body.is-loaded .preloader{ pointer-events:none; }
 .planos{ padding:150px 0 130px; }
 .plans{
   max-width:var(--container); margin:70px auto 0; padding:0 var(--edge);
-  display:grid; grid-template-columns:repeat(4,1fr); gap:22px; align-items:stretch;
+  display:grid; grid-template-columns:repeat(3,1fr); gap:22px; align-items:stretch;
 }
 .plan{
   position:relative; background:var(--paper); border:1.5px solid var(--paper-line); border-radius:20px;
@@ -401,16 +401,20 @@ body.is-loaded .preloader{ pointer-events:none; }
 .plan__desc{ font-size:14px; line-height:1.55; color:var(--muted); margin-bottom:22px; }
 .plan--highlight .plan__desc, .plan--dark .plan__desc{ color:rgba(246,243,234,.7); }
 
-.plan__price{ font-family:var(--font-display); font-size:44px; margin-bottom:24px; }
+.plan__price{ font-family:var(--font-display); font-size:44px; margin-bottom:16px; }
 .plan__price span{ font-size:20px; vertical-align:top; margin-right:2px; }
 .plan__price em{ display:block; font-family:var(--font-body); font-style:normal; font-size:12px; color:var(--muted); font-weight:600; letter-spacing:.02em; margin-top:4px; }
 .plan__price--custom{ font-size:26px; }
+
+.plan__fee{
+  font-size:12px; font-weight:700; color:var(--gold); margin-bottom:20px; letter-spacing:.01em;
+}
 .plan__list{ flex:1; margin-bottom:28px; }
 .plan__list li{ font-size:14px; padding:10px 0; border-top:1px solid var(--paper-line); }
 .plan--highlight .plan__list li, .plan--dark .plan__list li{ border-top-color:rgba(246,243,234,.14); }
 .plan__list li:first-child{ border-top:0; }
 
-@media (max-width:1100px){ .plans{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:900px){ .plans{ grid-template-columns:repeat(2,1fr); } }
 @media (max-width:560px){ .plans{ grid-template-columns:1fr; } }
 
 /* ==========================================================================
