@@ -12,12 +12,12 @@
 <meta property="og:site_name" content="VeigaTech">
 <meta property="og:title" content="VeigaTech — Sua empresa, encontrada no Google.">
 <meta property="og:description" content="Eu conserto o motivo pelo qual seu cliente não te encontra — no Google, no site ou no celular dele.">
-<meta property="og:image" content="/assets/img/veigatech-logo-preto-e-branco.png">
+<meta property="og:image" content="/assets/img/veigatech-logo-600.png">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" type="image/png" href="assets/img/veigatech-logo-preto-e-branco.png">
-<link rel="apple-touch-icon" href="assets/img/veigatech-logo-preto-e-branco.png">
+<link rel="icon" type="image/png" href="assets/img/veigatech-logo-280.png">
+<link rel="apple-touch-icon" href="assets/img/veigatech-logo-280.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,25 +32,33 @@
 
 <div class="preloader" data-preloader aria-hidden="true">
   <div class="preloader__inner">
-    <div class="preloader__seal" data-seal data-seal-text="VEIGATECH • APROVADO • " data-seal-size="180"></div>
-    <div class="preloader__stampmark" data-stampmark>APROVADO</div>
-    <div class="preloader__word">VEIGA<span>TECH</span></div>
+    <img src="assets/img/veigatech-logo-280.png" alt="" class="preloader__logo" data-preloader-logo>
+    <div class="preloader__tagline">VeigaTech. Everything, for you. <em>BR</em></div>
     <div class="preloader__bar"><div class="preloader__bar-fill" data-preloader-fill></div></div>
-    <div class="preloader__pct" data-preloader-pct>0%</div>
   </div>
   <div class="preloader__curtain preloader__curtain--l"></div>
   <div class="preloader__curtain preloader__curtain--r"></div>
 </div>
 
+<script>
+  setTimeout(function () {
+    var pre = document.querySelector('[data-preloader]');
+    if (pre && !document.body.classList.contains('is-loaded')) {
+      pre.style.display = 'none';
+      document.body.classList.add('is-loaded');
+    }
+  }, 6000);
+</script>
+
 <header class="nav" data-nav>
   <a href="#hero" class="nav__logo" data-magnetic>
-    <img src="assets/img/veigatech-logo-preto-e-branco.png" alt="VeigaTech" width="56" height="56">
+    <img src="assets/img/veigatech-logo-280.png" alt="VeigaTech" width="56" height="56">
     <span>VEIGA<em>TECH</em></span>
   </a>
 
   <nav class="nav__links" data-nav-links>
     <a href="#problema" data-hover-line>O problema</a>
-    <a href="#escada" data-hover-line>A escada</a>
+    <a href="#escada" data-hover-line>Pilares</a>
     <a href="#planos" data-hover-line>Planos</a>
     <a href="#processo" data-hover-line>Como funciona</a>
     <a href="#sobre" data-hover-line>Quem faz</a>
@@ -68,7 +76,7 @@
 
 <div class="mnav" data-mnav>
   <a href="#problema" data-mnav-link>O problema</a>
-  <a href="#escada" data-mnav-link>A escada</a>
+  <a href="#escada" data-mnav-link>Pilares</a>
   <a href="#planos" data-mnav-link>Planos</a>
   <a href="#processo" data-mnav-link>Como funciona</a>
   <a href="#sobre" data-mnav-link>Quem faz</a>
@@ -189,8 +197,8 @@
   <section id="escada" class="escada" data-escada>
     <div class="escada__pin" data-escada-pin>
       <div class="escada__head">
-        <p class="eyebrow">A ESCADA DA PRESENÇA DIGITAL</p>
-        <h2 class="section-title">Não são três produtos.<br>São três degraus.</h2>
+        <p class="eyebrow">OS 3 PILARES DA PRESENÇA DIGITAL</p>
+        <h2 class="section-title">Não são três produtos.<br>São três pilares.</h2>
       </div>
 
       <div class="escada__track" data-escada-track>
@@ -371,7 +379,7 @@
   <!-- SOBRE -->
   <section id="sobre" class="sobre">
     <div class="sobre__seal" data-seal data-seal-text="✦ VEIGATECH ✦ PRESENÇA DIGITAL " data-seal-size="380" data-parallax="0.1">
-      <img src="assets/img/veigatech-logo-preto-e-branco.png" alt="" class="sobre__seal-img">
+      <img src="assets/img/veigatech-logo-600.png" alt="" class="sobre__seal-img">
     </div>
     <div class="sobre__content">
       <p class="eyebrow" data-reveal>QUEM FAZ</p>
@@ -406,12 +414,12 @@
   <div class="footer__seal" data-seal data-seal-text="VEIGATECH • EVERYTHING FOR YOU • " data-seal-size="150"></div>
   <div class="footer__grid">
     <div class="footer__brand">
-      <img src="assets/img/veigatech-logo-preto-e-branco.png" alt="VeigaTech" width="52" height="52">
+      <img src="assets/img/veigatech-logo-280.png" alt="VeigaTech" width="52" height="52">
       <span>VEIGA<em>TECH</em></span>
     </div>
     <nav class="footer__links">
       <a href="#problema">O problema</a>
-      <a href="#escada">A escada</a>
+      <a href="#escada">Pilares</a>
       <a href="#planos">Planos</a>
       <a href="#processo">Como funciona</a>
       <a href="#sobre">Quem faz</a>

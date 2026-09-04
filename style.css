@@ -100,26 +100,19 @@ section{ position:relative; }
   position:fixed; inset:0; z-index:10000; background:var(--ink);
   display:flex; align-items:center; justify-content:center;
 }
-.preloader__inner{ position:relative; display:flex; flex-direction:column; align-items:center; gap:22px; }
-.preloader__seal{
-  position:absolute; top:50%; left:50%; width:180px; height:180px; margin:-90px 0 0 -90px;
-  color:var(--muted-light); opacity:.5;
-  animation: spin 18s linear infinite;
+.preloader__inner{ position:relative; z-index:3; display:flex; flex-direction:column; align-items:center; gap:22px; }
+.preloader__logo{
+  width:clamp(96px, 14vw, 140px); height:clamp(96px, 14vw, 140px); border-radius:50%;
+  box-shadow:0 0 0 1px rgba(246,243,234,.18);
+  animation: spin 2.4s linear infinite;
 }
-.preloader__stampmark{
-  position:absolute; top:50%; left:50%; margin:-46px 0 0 -80px;
-  width:160px; padding:10px 0; border:3px solid var(--stamp); border-radius:6px;
-  color:var(--stamp); font-family:var(--font-display); font-size:20px; text-align:center; letter-spacing:.08em;
-  transform:translateY(-160px) rotate(-18deg) scale(2.4); opacity:0;
+.preloader__tagline{
+  font-family:var(--font-body); font-weight:600; font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--paper); text-align:center;
 }
-.preloader__word{
-  font-family:var(--font-display); color:var(--paper); font-size:clamp(34px,7vw,64px);
-  letter-spacing:.02em; text-transform:uppercase;
-}
-.preloader__word span{ color:var(--gold); }
-.preloader__bar{ width:220px; height:2px; background:rgba(246,243,234,.18); overflow:hidden; }
+.preloader__tagline em{ color:var(--gold); font-style:normal; }
+.preloader__bar{ width:180px; height:2px; background:rgba(246,243,234,.18); overflow:hidden; }
 .preloader__bar-fill{ width:0%; height:100%; background:var(--gold); }
-.preloader__pct{ font-family:var(--font-body); font-weight:600; font-size:12px; letter-spacing:.15em; color:var(--muted-light); }
 .preloader__curtain{
   position:absolute; top:0; bottom:0; width:50%; background:var(--ink); z-index:2;
 }

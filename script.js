@@ -52,7 +52,6 @@
   /* ---------------------------------------------------------------------
      PRELOADER
      ------------------------------------------------------------------- */
-  var pctEl = document.querySelector("[data-preloader-pct]");
   var fillEl = document.querySelector("[data-preloader-fill]");
   var counter = { v: 0 };
 
@@ -64,18 +63,12 @@
   });
 
   preTl.to(counter, {
-    v: 100, duration: reduced ? 0.1 : 1.7, ease:"power2.inOut",
+    v: 100, duration: reduced ? 0.1 : 2.2, ease:"power2.inOut",
     onUpdate: function(){
-      var val = Math.round(counter.v);
-      if(pctEl) pctEl.textContent = val + "%";
-      if(fillEl) fillEl.style.width = val + "%";
+      if(fillEl) fillEl.style.width = Math.round(counter.v) + "%";
     }
   })
-  .to("[data-stampmark]", {
-    y: 0, rotate: -8, scale: 1, opacity: 1, duration: 0.5, ease:"back.out(3)"
-  }, "-=0.35")
-  .to("[data-stampmark]", { opacity: 0, duration: 0.25 }, "+=0.25")
-  .to(".preloader__word, .preloader__bar, .preloader__pct, .preloader__seal", {
+  .to(".preloader__logo, .preloader__tagline, .preloader__bar", {
     opacity: 0, y: -14, duration: 0.4, ease:"power2.in"
   }, "-=0.05")
   .to(".preloader__curtain--l", { xPercent: -100, duration: 0.9, ease:"expo.inOut" }, "curtain")

@@ -12,12 +12,12 @@
 <meta property="og:site_name" content="VeigaTech">
 <meta property="og:title" content="Portfólio — VeigaTech">
 <meta property="og:description" content="Segmentos que a VeigaTech já resolveu — de pet shop a escritório de advocacia.">
-<meta property="og:image" content="/assets/img/veigatech-logo-preto-e-branco.png">
+<meta property="og:image" content="/assets/img/veigatech-logo-600.png">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" type="image/png" href="assets/img/veigatech-logo-preto-e-branco.png">
-<link rel="apple-touch-icon" href="assets/img/veigatech-logo-preto-e-branco.png">
+<link rel="icon" type="image/png" href="assets/img/veigatech-logo-280.png">
+<link rel="apple-touch-icon" href="assets/img/veigatech-logo-280.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,25 +33,33 @@
 
 <div class="preloader" data-preloader aria-hidden="true">
   <div class="preloader__inner">
-    <div class="preloader__seal" data-seal data-seal-text="VEIGATECH • APROVADO • " data-seal-size="180"></div>
-    <div class="preloader__stampmark" data-stampmark>APROVADO</div>
-    <div class="preloader__word">VEIGA<span>TECH</span></div>
+    <img src="assets/img/veigatech-logo-280.png" alt="" class="preloader__logo" data-preloader-logo>
+    <div class="preloader__tagline">VeigaTech. Everything, for you. <em>BR</em></div>
     <div class="preloader__bar"><div class="preloader__bar-fill" data-preloader-fill></div></div>
-    <div class="preloader__pct" data-preloader-pct>0%</div>
   </div>
   <div class="preloader__curtain preloader__curtain--l"></div>
   <div class="preloader__curtain preloader__curtain--r"></div>
 </div>
 
+<script>
+  setTimeout(function () {
+    var pre = document.querySelector('[data-preloader]');
+    if (pre && !document.body.classList.contains('is-loaded')) {
+      pre.style.display = 'none';
+      document.body.classList.add('is-loaded');
+    }
+  }, 6000);
+</script>
+
 <header class="nav" data-nav>
   <a href="index.html" class="nav__logo" data-magnetic>
-    <img src="assets/img/veigatech-logo-preto-e-branco.png" alt="VeigaTech" width="56" height="56">
+    <img src="assets/img/veigatech-logo-280.png" alt="VeigaTech" width="56" height="56">
     <span>VEIGA<em>TECH</em></span>
   </a>
 
   <nav class="nav__links" data-nav-links>
     <a href="index.html#problema" data-hover-line>O problema</a>
-    <a href="index.html#escada" data-hover-line>A escada</a>
+    <a href="index.html#escada" data-hover-line>Pilares</a>
     <a href="index.html#planos" data-hover-line>Planos</a>
     <a href="index.html#sobre" data-hover-line>Quem faz</a>
     <a href="portfolio.html" data-hover-line class="is-current">Portfólio</a>
@@ -68,7 +76,7 @@
 
 <div class="mnav" data-mnav>
   <a href="index.html#problema" data-mnav-link>O problema</a>
-  <a href="index.html#escada" data-mnav-link>A escada</a>
+  <a href="index.html#escada" data-mnav-link>Pilares</a>
   <a href="index.html#planos" data-mnav-link>Planos</a>
   <a href="index.html#sobre" data-mnav-link>Quem faz</a>
   <a href="portfolio.html" data-mnav-link>Portfólio</a>
@@ -249,12 +257,12 @@
   <div class="footer__seal" data-seal data-seal-text="VEIGATECH • EVERYTHING FOR YOU • " data-seal-size="150"></div>
   <div class="footer__grid">
     <div class="footer__brand">
-      <img src="assets/img/veigatech-logo-preto-e-branco.png" alt="VeigaTech" width="52" height="52">
+      <img src="assets/img/veigatech-logo-280.png" alt="VeigaTech" width="52" height="52">
       <span>VEIGA<em>TECH</em></span>
     </div>
     <nav class="footer__links">
       <a href="index.html#problema">O problema</a>
-      <a href="index.html#escada">A escada</a>
+      <a href="index.html#escada">Pilares</a>
       <a href="index.html#planos">Planos</a>
       <a href="index.html#sobre">Quem faz</a>
       <a href="portfolio.html">Portfólio</a>
