@@ -51,6 +51,10 @@
 .slot--filled:hover{ border-color:var(--gold); color:var(--gold); }
 .slot__mark{ font-family:var(--font-display); font-size:26px; letter-spacing:.02em; }
 
+.slot--dark{ background:var(--ink); border-color:var(--ink); }
+.slot--dark:hover{ border-color:var(--gold); }
+.slot--dark img{ width:74%; height:74%; }
+
 @media (max-width:820px){
   .segment{ grid-template-columns:1fr; gap:26px; padding:48px var(--edge); }
   .slot{ width:88px; height:88px; }
