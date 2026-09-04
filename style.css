@@ -145,7 +145,7 @@ body.is-loaded .preloader{ pointer-events:none; }
 .nav__burger{ display:none; flex-direction:column; gap:5px; background:none; border:0; cursor:pointer; padding:6px; }
 .nav__burger span{ width:24px; height:2px; background:var(--paper); display:block; }
 
-@media (max-width:900px){
+@media (max-width:900px), (max-height:500px){
   .nav__links{ display:none; }
   .nav__cta{ display:none; }
   .nav__burger{ display:flex; }
